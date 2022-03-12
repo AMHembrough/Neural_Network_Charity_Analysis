@@ -26,7 +26,8 @@ What variable(s) are considered to be the features for your model?
 
 What variable(s) are neither targets nor features, and should be removed from the input data?
 
--	EIN, NAME
+-	EIN
+-	NAME
 
 ## Compiling, Training, and Evaluating the Model
 
@@ -53,7 +54,7 @@ What steps did you take to try and increase model performance?
 
 ## Results
 
-Below are the results of the deep learning model.  Despite 4 attempts to increase performance of the model, the model did not yield an accuracy of > 75%.  
+Below are the results of the deep learning model.  Despite 6 attempts to increase performance of the model, the model did not yield an accuracy of > 75%.  
 
 Attempt 1 yielded a model with an accuracy of 72.64% and a loss of 0.5531.
 
