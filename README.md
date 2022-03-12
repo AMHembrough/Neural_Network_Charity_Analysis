@@ -8,42 +8,41 @@ To do this, we created a neural network model and then attempted to optimize the
 
 ## Data Preprocessing
 
--	What variable(s) are considered the target(s) for your model?
+What variable(s) are considered the target(s) for your model?
 
-IS_SUCCESSFUL
+-	IS_SUCCESSFUL
 
--	What variable(s) are considered to be the features for your model?
+What variable(s) are considered to be the features for your model?
 
-APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT 
+-	APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT 
 
--	What variable(s) are neither targets nor features, and should be removed from the input data?
+What variable(s) are neither targets nor features, and should be removed from the input data?
 
-EIN, NAME
+-	EIN, NAME
 
 ## Compiling, Training, and Evaluating the Model
 
--	How many neurons, layers, and activation functions did you select for your neural network model, and why?
-See details regarding neurons, layers and activations functions below. 
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+-	See details regarding neurons, layers and activations functions below. 
 
--	Were you able to achieve the target model performance?
-No, I was not able to achieve the target model performance of >75%. 
+Were you able to achieve the target model performance?
+-	No, I was not able to achieve the target model performance of >75%. 
 
--	What steps did you take to try and increase model performance?
-o	Attempt 1 : Increase epochs from 50 to 100.  
+What steps did you take to try and increase model performance?
+-	Attempt 1 : Increase epochs from 50 to 100.  
 
-o	Attempt 2 : Adjust number of hidden nodes. 
-	Hidden nodes layer 1 : 80  80
-	Hidden nodes layer 1 : 30  50
+-	Attempt 2 : Adjust number of hidden nodes. Hidden nodes layer 1 : 80  80.  Hidden nodes layer 1 : 30  50
 
-o	Attempt 3 : Change model from ReLU to sigmoid. 
+-	Attempt 3 : Change model from ReLU to sigmoid. 
 
-o	Attempt 4 : Change model from ReLU to Leaky ReLU  
+-	Attempt 4 : Change model from ReLU to Leaky ReLU  
 
-o	Attempt 5 : Remove noisy variables from the features, specifically “SPECIAL_CONSIDERATIONS”.  This feature is a binary feature with options of “yes” or “no”.  The frequency of “yes” within the dataset was considerably small.  
+-	Attempt 5 : Remove noisy variables from the features, specifically “SPECIAL_CONSIDERATIONS”.  This feature is a binary feature with options of “yes” or “no”.  The frequency of “yes” within the dataset was considerably small.  
 
-o	Attempt 6 : Added additional hidden layer, specifically hidden layer three (hidden_nodes_layer3 = 20).
+-	Attempt 6 : Added additional hidden layer, specifically hidden layer three (hidden_nodes_layer3 = 20).
 
-#Summary
+# Summary
+
 ## Results
 
 Below are the results of the deep learning model.  Despite 4 attempts to increase performance of the model, the model did not yield an accuracy of > 75%.  
